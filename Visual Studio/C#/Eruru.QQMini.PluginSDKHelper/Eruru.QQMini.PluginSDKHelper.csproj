@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<IsBuildFramework>True</IsBuildFramework>
+	</PropertyGroup>
+	<PropertyGroup>
+		<TargetFrameworks>net45;net46;net47;net48;</TargetFrameworks>
+		<Platforms>AnyCPU</Platforms>
+		<Version>1.0.0.2</Version>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net45|AnyCPU'">
+		<PlatformTarget>x86</PlatformTarget>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net45|AnyCPU'">
+		<PlatformTarget>x86</PlatformTarget>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="QQMini.PluginSDK" Version="1.0.11.1021-Beta" />
+	</ItemGroup>
+
+</Project>
